@@ -11,7 +11,7 @@ class pet:
     gender: str
     age: int
 
-pets = [
+pets: list[pet] = [
     pet(1, "ben", "dalmatian", "male", 2),
     pet(2, "Rosey", "poodle", "female", 1),
 ]
@@ -22,4 +22,5 @@ def home():
 
 @app.get("/pets")
 def pet_range():
-    return pets
+
+    return print(pets.name)
