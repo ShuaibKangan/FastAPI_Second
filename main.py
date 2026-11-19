@@ -22,5 +22,9 @@ def home():
 
 @app.get("/pets")
 def pet_range():
+    pet_names = []
 
-    return print(pets.name)
+    for item in pets:
+        print(item.name)
+        pet_names.append(item.name)
+    return pet_names
